@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main{
+  height: 100vh;
+  width:100%;
+  background: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url(/img/beach-g5867c86f6_1920.jpg); 
+  background-size: cover;
+  background-position: center;
+}
+.content{
+  height: 15vh;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content h2{
+  color: white;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.content ul li{
+  display: inline-block;
+  padding: 5px 8px;
+  list-style-type: none;
+  position: relative;
+  margin: 0 10px;
+  border-bottom: 3px solid transparent;
+}
+.content ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.content ul li:hover {
+  border-bottom: 3px solid #e3b104;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.main-content {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+ transform: translateY(50%);
+ text-align: center;
+}
+.main-content h1{
+  font-size: 60px;
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.main-content p{
+  color: white;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+button{
+  position: relative;
+  width: 200px;
+  padding: 14px 30px;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #e3b104;
+  background: transparent;
+  color: white;
+  overflow: hidden;
+}
+span{
+  background:#e3b104;
+  height: 100%;
+  width: 0%;
+  border: 2px solid #e3b104;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.6s;
+  border: none;
+}
+button:hover span{
+  width: 100%;
+}
+button:hover{
+  border: none;
+}
